@@ -49,6 +49,7 @@ pipeline {
         script {
             sh "docker stop testImage || true && docker rm testImage || true"
             dockerImage.run '-p 7000:8081 --name testImage'
+            echo "${GIT_BRANCH}"
         }
       }
     }
