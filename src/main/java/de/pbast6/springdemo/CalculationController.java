@@ -28,7 +28,7 @@ public class CalculationController {
 
     @RequestMapping("/")
     String sub() {
-        return "Hello wolrd";
+        return "Hello wrong wolrd";
     }
 
     // @RequestMapping("/subdomain/{id}")
